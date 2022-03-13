@@ -25,8 +25,8 @@ function styles() {
     .src([
       'assets/libs/slick/slick-theme.css',
       'assets/libs/slick/slick.css',
-      'assets/css/animate.min.css',
-      'assets/css/**/*.css',
+      'assets/scss/animate.min.css',
+      'assets/scss/**/*.css',
     ])
     .pipe(sourcemaps.init())
     .pipe(sass())
@@ -64,7 +64,7 @@ function watch() {
   });
 
   gulp.watch('assets/**/*.html').on('change', browserSync.reload);
-  gulp.watch('assets/css/**/*.css', gulp.series(styles));
+  gulp.watch('assets/scss/**/*.css', gulp.series(styles));
   gulp.watch('assets/js/main.js', gulp.series(scripts));
 }
 
