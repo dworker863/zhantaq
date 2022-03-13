@@ -29,6 +29,31 @@
   src: url('../fonts/Montserrat/Montserrat-ExtraBold.woff');
   font-weight: 800;
 }
+
+@font-face {
+  font-family: 'Bebas Neue Regular';
+  src: url('../fonts/BebasNeue-Regular.woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Regular';
+  src: url('../fonts/BebasNeueRegular.woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Regular';
+  src: url('../fonts/BebasNeue\ Light.woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeueRegular.woff');
+  font-weight: 400;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -416,7 +441,7 @@ input::-webkit-inner-spin-button {
   height: 93vh;
 }
 .start-slide1 {
-  background: url('../image/start1-christmas.webp') center no-repeat;
+  background: url('../images/start1-christmas.webp') center no-repeat;
   background-size: cover;
 }
 .start-slide1 .start-title {
@@ -472,7 +497,7 @@ input::-webkit-inner-spin-button {
   }
 }
 .start-slide2 {
-  background: url('../image/start2-christmas.webp') center no-repeat;
+  background: url('../images/start2-christmas.webp') center no-repeat;
   background-size: cover;
 }
 .start-slide2 .start-title {
@@ -511,7 +536,7 @@ input::-webkit-inner-spin-button {
   }
 }
 .start-slide3 {
-  background: url('../image/start3-christmas.webp') center no-repeat;
+  background: url('../images/start3-christmas.webp') center no-repeat;
   background-size: cover;
 }
 .start-slide3 .start-title {
@@ -934,13 +959,13 @@ input::-webkit-inner-spin-button {
 
 .amino {
   width: 100%;
-  background: url('../image/amino-bg.webp') right no-repeat;
+  background: url('../images/amino-bg.webp') right no-repeat;
   background-size: 50%;
   padding: 60px 0;
 }
 @media (max-width: 1624px) {
   .amino {
-    background: url('../image/amino-bg.webp') right no-repeat;
+    background: url('../images/amino-bg.webp') right no-repeat;
     background-position: right 0px;
   }
 }
@@ -1225,7 +1250,7 @@ input::-webkit-inner-spin-button {
 .variant {
   width: 100%;
   overflow: hidden;
-  background: url('../image/variant-bg.webp') no-repeat center;
+  background: url('../images/variant-bg.webp') no-repeat center;
   background-size: cover;
   height: 717px;
   padding-top: 64px;
@@ -1415,7 +1440,7 @@ input::-webkit-inner-spin-button {
 }
 .mission {
   width: 100%;
-  background: url('../image/mission-bg.webp') no-repeat center;
+  background: url('../images/mission-bg.webp') no-repeat center;
   background-size: cover;
   height: 640px;
 }
@@ -1838,7 +1863,7 @@ input::-webkit-inner-spin-button {
   }
 
   .mission {
-    background: url(../image/zhantak00006.webp) no-repeat center;
+    background: url(../images/zhantak00006.webp) no-repeat center;
     height: 750px;
     position: relative;
   }
@@ -2187,7 +2212,7 @@ input::-webkit-inner-spin-button {
 }
 @media (max-width: 850px) {
   .mission {
-    background: url(../image/zhantak00006.webp) no-repeat center;
+    background: url(../images/zhantak00006.webp) no-repeat center;
   }
 
   .thirst {
@@ -2212,7 +2237,7 @@ input::-webkit-inner-spin-button {
 
   .amino {
     background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
-      url(../image/amino-bg.webp) right no-repeat;
+      url(../images/amino-bg.webp) right no-repeat;
     color: #ffffff;
   }
   .amino-text,
@@ -2222,7 +2247,7 @@ input::-webkit-inner-spin-button {
   }
 
   .variant {
-    background: url(../image/variant-bg.png) no-repeat right;
+    background: url(../images/variant-bg.webp) no-repeat right;
   }
   .variant span {
     color: #ffffff;
@@ -2237,7 +2262,7 @@ input::-webkit-inner-spin-button {
 
   .variant {
     height: 700px;
-    background: url(../image/variant-bg.webp) no-repeat right;
+    background: url(../images/variant-bg.webp) no-repeat right;
     background-size: cover;
   }
 }
@@ -2717,7 +2742,7 @@ input::-webkit-inner-spin-button {
 @media (max-width: 425px) {
   .amino {
     background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
-      url(../image/amino-bg.webp) -320px no-repeat;
+      url(../images/amino-bg.webp) -320px no-repeat;
   }
 }
 @media (max-width: 425px) {
@@ -2941,7 +2966,7 @@ input::-webkit-inner-spin-button {
   height: calc(100vh - 108px);
   max-height: 992px;
   box-sizing: border-box;
-  background: url('../image/main2-bg.webp') no-repeat center;
+  background: url('../images/main2-bg.webp') no-repeat center;
   background-size: cover;
 }
 @media (max-width: 1024px) {
@@ -3140,14 +3165,14 @@ input::-webkit-inner-spin-button {
   position: relative;
 }
 .form_reg-content::after {
-  content: url('../image/effect-right.webp');
+  content: url('../images/effect-right.webp');
   position: absolute;
   z-index: 100;
   top: -50px;
   right: -100px;
 }
 .form_reg-content::before {
-  content: url('../image/effect-left.webp');
+  content: url('../images/effect-left.webp');
   position: absolute;
   z-index: 100;
   top: -50px;
@@ -3405,7 +3430,7 @@ input::-webkit-inner-spin-button {
   }
 
   .other {
-    background: url(../image/other-bg.png) no-repeat center;
+    background: url(../images/other-bg.webp) no-repeat center;
   }
 }
 @media (max-width: 768px) {
