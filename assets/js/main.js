@@ -296,21 +296,21 @@ const groupsNur = [
 ]
 
 setTimeout(() => {
-  ymaps.ready(() => init(groupsAlmaty, centerAlmaty, 'mapAlmaty', '.map-Almaty'));
-  ymaps.ready(() => init(groupsNur, centerNur, 'mapNur', '.map-Nur'));
+  ymaps.ready(() => init(groupsNur, centerNur, 'mapNur', '.map-Nur', 14));
+  ymaps.ready(() => init(groupsAlmaty, centerAlmaty, 'mapAlmaty', '.map-Almaty', 14));
 }, 4000);
 
-function init(groups, center, mapId, mapLeft) {
+function init(groups, center, mapId, mapLeft, zoom) {
   // Создание экземпляра карты.
   var myMap = new ymaps.Map(
       mapId,
       {
         center,
-        zoom: 12,
+        zoom: 20,
       },
-      {
-        searchControlProvider: 'yandex#search',
-      },
+      // {
+      //   searchControlProvider: 'yandex#search',
+      // },
     ),
     // Контейнер для меню.
     menu = $('<ul class="menu"/>');
@@ -320,7 +320,6 @@ function init(groups, center, mapId, mapLeft) {
   }
 
   function createMenuGroup(group) {
-    console.log(group.name);
     // Пункт меню.
     var menuItem = $(
         '<li><a style="display: none;" href="#">' + group.name + '</a></li>',

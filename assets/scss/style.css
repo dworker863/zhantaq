@@ -126,8 +126,30 @@ div {
   position: absolute;
   top: 0;
   left: 0;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
+
+.map-btns {
+  margin-bottom: 20px;
+}
+
+.almaty-btn, .nur-btn {
+  font-family: Montserrat, serif;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #559374;
+  color: #fff;
+}
+
+.almaty-btn {
+  margin-right: 6px;
+}
+
+.almaty-btn:hover, .nur-btn:hover {
+  background-color: #DAF2E6;
+  color: #559374;  
+} 
 
 .map-right {
   position: relative;
