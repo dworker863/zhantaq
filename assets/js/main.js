@@ -296,8 +296,8 @@ const groupsNur = [
 ]
 
 setTimeout(() => {
-  ymaps.ready(() => init(groupsNur, centerNur, 'mapNur', '.map-Nur', 14));
   ymaps.ready(() => init(groupsAlmaty, centerAlmaty, 'mapAlmaty', '.map-Almaty', 14));
+  ymaps.ready(() => init(groupsNur, centerNur, 'mapNur', '.map-Nur', 14));
 }, 4000);
 
 function init(groups, center, mapId, mapLeft, zoom) {
@@ -306,11 +306,11 @@ function init(groups, center, mapId, mapLeft, zoom) {
       mapId,
       {
         center,
-        zoom: 20,
+        zoom,
       },
-      // {
-      //   searchControlProvider: 'yandex#search',
-      // },
+      {
+        searchControlProvider: 'yandex#search',
+      },
     ),
     // Контейнер для меню.
     menu = $('<ul class="menu"/>');
