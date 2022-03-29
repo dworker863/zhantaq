@@ -29,7 +29,7 @@ onlyText.addEventListener('input', function (e) {
   onlyText.value.replace(/[0-9]/g, '');
 });
 
-var groups = [
+var groupsAlmaty = [
   {
     style: 'islands#redIcon',
     items: [
@@ -237,14 +237,75 @@ var groups = [
   },
 ];
 
-ymaps.ready(init);
+const centerAlmaty = [43.2455, 76.9163];
+const centerNur = [51.1577,71.4299];
 
-function init() {
+// [51.157738,71.429947];
+
+const groupsNur = [
+  {
+    style: 'islands#redIcon',
+    items: [
+      {
+        center: [51.137738,71.449947],
+        logo: 'images/esentai_gurme.webp',
+        name: 'Esentai Gourmet',
+        address:
+          'Аль-Фараби, <strong>77/8</strong>, ТЦ <strong>ESENTAI MALL</strong>',
+      },
+      {
+        center: [51.167738,71.419947],
+        logo: 'images/ubiley.webp',
+        name: 'Юбилейный',
+        address: 'Абылай хана, <strong>74</strong>',
+      },
+      {
+        center: [51.177738,71.449947],
+        logo: 'images/stolichny.webp',
+        name: 'Столичный',
+        address: 'Абылай хана, <strong>121</strong>',
+      },
+      {
+        center: [51.157738,71.409947],
+        logo: 'images/desertik.webp',
+        name: 'Desertik.kz',
+        address:
+          'Розыбакиева, <strong>263</strong>, <strong>2</strong> этаж, ТРЦ <strong>Mega Center Alma-Ata</strong>',
+      },
+      {
+        center: [51.137738,71.429947],
+        logo: 'images/alani.webp',
+        name: 'Ресторан Alani',
+        address: 'Луганского, <strong>19</strong>',
+      },
+      {
+        center: [51.187738,71.419947],
+        logo: 'images/toi-mart.webp',
+        name: 'Дискаунтер «TOIMART»',
+        address: 'Розыбакиева, <strong>4</strong>',
+      },
+      {
+        center: [51.147738,71.449947],
+        logo: 'images/toi-mart.webp',
+        name: 'Супермаркет «TOIMART»',
+        address: 'Кунаева, <strong>153</strong>',
+      },
+    ],
+  },
+
+]
+
+setTimeout(() => {
+  ymaps.ready(() => init(groupsAlmaty, centerAlmaty, 'mapAlmaty', '.map-Almaty'));
+  ymaps.ready(() => init(groupsNur, centerNur, 'mapNur', '.map-Nur'));
+}, 4000);
+
+function init(groups, center, mapId, mapLeft) {
   // Создание экземпляра карты.
   var myMap = new ymaps.Map(
-      'map',
+      mapId,
       {
-        center: [43.2455, 76.9163],
+        center,
         zoom: 12,
       },
       {
@@ -259,6 +320,7 @@ function init() {
   }
 
   function createMenuGroup(group) {
+    console.log(group.name);
     // Пункт меню.
     var menuItem = $(
         '<li><a style="display: none;" href="#">' + group.name + '</a></li>',
@@ -330,7 +392,23 @@ function init() {
   }
 
   // Добавляем меню в тэг BODY.
-  menu.appendTo($('.map-left'));
+  menu.appendTo($(mapLeft));
   // Выставляем масштаб карты чтобы были видны все группы.
   myMap.setBounds(myMap.geoObjects.getBounds());
+
+  $('.nur-btn').on('click', function(e) {
+    e.preventDefault();
+    $('#mapAlmaty').css('visibility', 'hidden');
+    $('#mapNur').css('visibility', 'visible');
+    $('.map-Almaty').css('display', 'none');
+    $('.map-Nur').css('display', 'block');
+  })
+
+  $('.almaty-btn').on('click', function(e) {
+    e.preventDefault();
+    $('#mapNur').css('visibility', 'hidden');
+    $('#mapAlmaty').css('visibility', 'visible');
+    $('.map-Nur').css('display', 'none');
+    $('.map-Almaty').css('display', 'block');
+  })
 }
