@@ -42,10 +42,10 @@ function scripts() {
   return gulp
     .src([
       'assets/js/json.js',
-      'assets/libs/jquery-3.6.0.min.js',
-      'assets/libs/slick.min.js',
+      // 'assets/libs/jquery-3.6.0.min.js',
+      // 'assets/libs/slick.min.js',
       'assets/libs/wow.min.js',
-      'assets/js/js-inputmask.min.js',
+      'assets/libs/js-inputmask.min.js',
       'assets/js/main.js',
     ])
     .pipe(sourcemaps.init())
