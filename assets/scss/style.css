@@ -3749,3 +3749,17 @@ input::-webkit-inner-spin-button {
     height: auto;
   }
 } /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 768px) {
+  .start-slide1 {
+    background-image: url(../images/start1-mobile.webp);
+  }
+
+  .start-slide2 {
+    background-image: url(../images/start2-mobile.webp);
+  }
+
+  .start-slide3 {
+    background-image: url(../images/start3-mobile.webp);
+  }
+}
