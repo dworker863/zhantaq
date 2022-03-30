@@ -1617,6 +1617,11 @@ input::-webkit-inner-spin-button {
     margin-right: auto;
     margin-bottom: 10px;
   }
+
+  #mapAlmaty, #mapNur {
+    width: 650px !important;
+    height: 500px !important;
+  }
 }
 .contacts-form #submit-button {
   width: 278px;
@@ -1665,6 +1670,8 @@ input::-webkit-inner-spin-button {
   width: auto;
   text-align: center;
 }
+
+
 @media (max-width: 425px) {
   .partner-title {
     font-size: 12px;
@@ -1685,11 +1692,6 @@ input::-webkit-inner-spin-button {
   }
 }
 
-#map {
-  width: 650px !important;
-  height: 500px !important;
-}
-
 .menu-right {
   height: 60%;
 }
@@ -1698,6 +1700,7 @@ input::-webkit-inner-spin-button {
   width: 100%;
   padding-top: 42px;
   padding-bottom: 14px;
+  margin-bottom: 50px;
 }
 .map-content {
   display: flex;
