@@ -11,8 +11,8 @@ $('.start').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   speed: 600,
-  // autoplay: true,
-  // autoplaySpeed: 3000,
+  autoplay: true,
+  autoplaySpeed: 3000,
 });
 
 $('.header-link').click(function () {
@@ -296,10 +296,10 @@ const groupsNur = [
 
 ]
 
-// setTimeout(() => {
-//   ymaps.ready(() => init(groupsAlmaty, centerAlmaty, 'mapAlmaty', '.map-Almaty', 14));
-//   ymaps.ready(() => init(groupsNur, centerNur, 'mapNur', '.map-Nur', 14));
-// }, 4500);
+setTimeout(() => {
+  ymaps.ready(() => init(groupsAlmaty, centerAlmaty, 'mapAlmaty', '.map-Almaty', 14));
+  ymaps.ready(() => init(groupsNur, centerNur, 'mapNur', '.map-Nur', 14));
+}, 4000);
 
 function init(groups, center, mapId, mapLeft, zoom) {
   // Создание экземпляра карты.
