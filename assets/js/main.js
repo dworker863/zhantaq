@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 (function () {
   $('.menu-wrapper').on('click', function () {
     $('.hamburger-menu').toggleClass('animate');
@@ -295,10 +296,10 @@ const groupsNur = [
 
 ]
 
-setTimeout(() => {
-  ymaps.ready(() => init(groupsAlmaty, centerAlmaty, 'mapAlmaty', '.map-Almaty', 14));
-  ymaps.ready(() => init(groupsNur, centerNur, 'mapNur', '.map-Nur', 14));
-}, 4000);
+// setTimeout(() => {
+//   ymaps.ready(() => init(groupsAlmaty, centerAlmaty, 'mapAlmaty', '.map-Almaty', 14));
+//   ymaps.ready(() => init(groupsNur, centerNur, 'mapNur', '.map-Nur', 14));
+// }, 4500);
 
 function init(groups, center, mapId, mapLeft, zoom) {
   // Создание экземпляра карты.
@@ -411,3 +412,4 @@ function init(groups, center, mapId, mapLeft, zoom) {
     $('.map-Almaty').css('display', 'block');
   })
 }
+});
