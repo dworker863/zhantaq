@@ -3762,4 +3762,16 @@ input::-webkit-inner-spin-button {
   .start-slide3 {
     background-image: url(../images/start3-mobile.webp);
   }
+
+  .mission {
+    background-image: url(../images/variant-bg-mobile.webp);
+  }
+
+  .variant {
+    background-image: url(../images/variant-bg-mobile.webp);
+  }
+
+  .mission {
+    background-image: url(../images/zhantak00006-mobile.webp);
+  }
 }
