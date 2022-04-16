@@ -238,63 +238,63 @@ var groupsAlmaty = [
   },
 ];
 
-const centerAlmaty = [43.2455, 76.9163];
-const centerNur = [51.1577,71.4299];
-
-// [51.157738,71.429947];
-
 const groupsNur = [
   {
     style: 'islands#redIcon',
     items: [
       {
-        center: [51.137738,71.449947],
-        logo: 'images/esentai_gurme.webp',
-        name: 'Esentai Gourmet',
+        center: [51.126198,71.471725],
+        logo: 'images/mumtaz-icon.webp',
+        name: 'Мумтаз',
         address:
-          'Аль-Фараби, <strong>77/8</strong>, ТЦ <strong>ESENTAI MALL</strong>',
+          'Тауелсиздик, <strong>48</strong>, Мечеть <strong>Әзірет Султан</strong>',
       },
       {
-        center: [51.167738,71.419947],
-        logo: 'images/ubiley.webp',
-        name: 'Юбилейный',
-        address: 'Абылай хана, <strong>74</strong>',
+        center: [51.156659,71.516614],
+        logo: 'images/mumtaz-icon.webp',
+        name: 'Мумтаз',
+        address: 'Қобыланды батыр, <strong>3</strong>, Мечеть <strong>Aq Meshit</strong> цокольный этаж',
       },
       {
-        center: [51.177738,71.449947],
-        logo: 'images/stolichny.webp',
-        name: 'Столичный',
-        address: 'Абылай хана, <strong>121</strong>',
+        center: [51.145263,71.406965],
+        logo: 'images/mumtaz-icon.webp',
+        name: 'Мумтаз',
+        address: 'Қорғалжын, <strong>3</strong>',
       },
       {
-        center: [51.157738,71.409947],
-        logo: 'images/desertik.webp',
-        name: 'Desertik.kz',
-        address:
-          'Розыбакиева, <strong>263</strong>, <strong>2</strong> этаж, ТРЦ <strong>Mega Center Alma-Ata</strong>',
+        center: [51.126573,71.415544],
+        logo: 'images/mumtaz-icon.webp',
+        name: 'Мумтаз',
+        address: 'Қабанбай батыр, <strong>36</strong>',
       },
       {
-        center: [51.137738,71.429947],
-        logo: 'images/alani.webp',
-        name: 'Ресторан Alani',
-        address: 'Луганского, <strong>19</strong>',
+        center: [51.148704,71.472839],
+        logo: 'images/caviar-house-icon.webp',
+        name: 'Caviar Hause',
+        address: 'Петрова, <strong>24</strong>, <strong>Евразия-1</strong> цокольный этаж, 099 бутик',
       },
       {
-        center: [51.187738,71.419947],
-        logo: 'images/toi-mart.webp',
-        name: 'Дискаунтер «TOIMART»',
-        address: 'Розыбакиева, <strong>4</strong>',
+        center: [51.13825,71.410747],
+        logo: 'images/caviar-house-icon.webp',
+        name: 'Caviar Hause',
+        address: 'Туран, <strong>24</strong>, <strong>ТРЦ Сарыарқа</strong>',
       },
       {
-        center: [51.147738,71.449947],
-        logo: 'images/toi-mart.webp',
-        name: 'Супермаркет «TOIMART»',
-        address: 'Кунаева, <strong>153</strong>',
+        center: [51.083909,71.440652],
+        logo: 'images/caviar-house-icon.webp',
+        name: 'Caviar Hause',
+        address: 'Фариза Онгарсынова, <strong>6</strong>',
       },
     ],
   },
 
 ]
+
+const centerAlmaty = [43.2455, 76.9163];
+const centerNur = [51.1577,71.4299];
+
+// [51.157738,71.429947];
+
 
 setTimeout(() => {
   ymaps.ready(() => init(groupsAlmaty, centerAlmaty, 'mapAlmaty', '.map-Almaty', 14));
