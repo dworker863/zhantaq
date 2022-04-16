@@ -287,18 +287,41 @@ const groupsNur = [
       },
     ],
   },
+]
 
+const groupsTaraz = [
+  {
+    style: 'islands#redIcon',
+    items: [
+      {
+        center: [42.8996, 71.3927],
+        logo: 'images/mumtaz-icon.webp',
+        name: 'Мумтаз',
+        address:
+          'Тауелсиздик, <strong>48</strong>, Мечеть <strong>Әзірет Султан</strong>',
+      },
+      {
+        center: [42.8996, 71.3627],
+        logo: 'images/mumtaz-icon.webp',
+        name: 'Мумтаз',
+        address:
+          'Тауелсиздик, <strong>48</strong>, Мечеть <strong>Әзірет Султан</strong>',
+      },      
+    ],
+  },
 ]
 
 const centerAlmaty = [43.2455, 76.9163];
-const centerNur = [51.1577,71.4299];
+const centerNur = [51.1577, 71.4299];
+const centerTaraz = [42.8996, 71.3927];
 
 // [51.157738,71.429947];
 
 
 setTimeout(() => {
-  ymaps.ready(() => init(groupsAlmaty, centerAlmaty, 'mapAlmaty', '.map-Almaty', 14));
-  ymaps.ready(() => init(groupsNur, centerNur, 'mapNur', '.map-Nur', 14));
+  ymaps.ready(() => init(groupsAlmaty, centerAlmaty, 'mapAlmaty', '.map-Almaty', 20));
+  ymaps.ready(() => init(groupsNur, centerNur, 'mapNur', '.map-Nur', 20));
+  ymaps.ready(() => init(groupsTaraz, centerTaraz, 'mapTaraz', '.map-Taraz', 20));
 }, 4000);
 
 function init(groups, center, mapId, mapLeft, zoom) {
@@ -399,17 +422,31 @@ function init(groups, center, mapId, mapLeft, zoom) {
   $('.nur-btn').on('click', function(e) {
     e.preventDefault();
     $('#mapAlmaty').css('visibility', 'hidden');
+    $('#mapTaraz').css('visibility', 'hidden');
     $('#mapNur').css('visibility', 'visible');
     $('.map-Almaty').css('display', 'none');
+    $('.map-Taraz').css('display', 'none');
     $('.map-Nur').css('display', 'block');
   })
 
   $('.almaty-btn').on('click', function(e) {
     e.preventDefault();
     $('#mapNur').css('visibility', 'hidden');
+    $('#mapTaraz').css('visibility', 'hidden');
     $('#mapAlmaty').css('visibility', 'visible');
     $('.map-Nur').css('display', 'none');
+    $('.map-Taraz').css('display', 'none');
     $('.map-Almaty').css('display', 'block');
+  })
+
+  $('.taraz-btn').on('click', function(e) {
+    e.preventDefault();
+    $('#mapNur').css('visibility', 'hidden');
+    $('#mapAlmaty').css('visibility', 'hidden');
+    $('#mapTaraz').css('visibility', 'visible');
+    $('.map-Nur').css('display', 'none');
+    $('.map-Almaty').css('display', 'none');
+    $('.map-Taraz').css('display', 'block');
   })
 }
 });

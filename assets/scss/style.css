@@ -117,12 +117,12 @@ div {
   font-family: Acrom;
   src: url('../fonts/ofont.ru_Acrom.woff');
 }
-#mapAlmaty, #mapNur {
+#mapAlmaty, #mapNur, #mapTaraz {
   width: 600px;
   height: 500px;
 }
 
-#mapNur {
+#mapNur, #mapTaraz {
   position: absolute;
   top: 0;
   left: 0;
@@ -133,7 +133,7 @@ div {
   margin-bottom: 20px;
 }
 
-.almaty-btn, .nur-btn {
+.almaty-btn, .nur-btn, .taraz-btn {
   font-family: Montserrat, serif;
   display: inline-block;
   padding: 5px 10px;
@@ -142,11 +142,11 @@ div {
   color: #fff;
 }
 
-.almaty-btn {
+.almaty-btn, .nur-btn {
   margin-right: 6px;
 }
 
-.almaty-btn:hover, .nur-btn:hover {
+.almaty-btn:hover, .nur-btn:hover, .taraz-btn:hover {
   background-color: #DAF2E6;
   color: #559374;  
 } 
