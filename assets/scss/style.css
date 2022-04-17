@@ -130,12 +130,14 @@ div {
 }
 
 .map-btns {
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .almaty-btn, .nur-btn, .taraz-btn, .kok-btn, .shym-btn {
   font-family: Montserrat, serif;
   display: inline-block;
+  margin-bottom: 10px;
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #559374;
