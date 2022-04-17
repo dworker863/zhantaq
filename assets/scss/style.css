@@ -515,7 +515,6 @@ input::-webkit-inner-spin-button {
 .start-slide1 .start-text-title {
   color: #ffffff;
   font-family: Montserrat;
-  font-size: 22px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -3765,10 +3764,6 @@ input::-webkit-inner-spin-button {
 
   .start-slide3 {
     background-image: url(../images/start3.webp);
-  }
-
-  .mission {
-    background-image: url(../images/variant-bg.webp);
   }
 
   .variant {
