@@ -639,9 +639,24 @@ const groupsTaraz = [
   },
 ]
 
+const groupsКок = [
+  {
+    style: 'islands#redIcon',
+    items: [
+      {
+        center: [53.285136,69.375515],
+        logo: 'images/магазин.webp',
+        name: 'Арзан маркет',
+        address: 'Село <strong>Ақшолақ</strong>',
+      },
+    ]
+  }
+]
+
 const centerAlmaty = [43.2455, 76.9163];
 const centerNur = [51.1577, 71.4299];
 const centerTaraz = [42.8996, 71.3927];
+const centerKok = [53.2851,69.3755];
 
 // [51.157738,71.429947];
 
@@ -650,6 +665,7 @@ setTimeout(() => {
   ymaps.ready(() => init(groupsAlmaty, centerAlmaty, 'mapAlmaty', '.map-Almaty', 20));
   ymaps.ready(() => init(groupsNur, centerNur, 'mapNur', '.map-Nur', 20));
   ymaps.ready(() => init(groupsTaraz, centerTaraz, 'mapTaraz', '.map-Taraz', 20));
+  ymaps.ready(() => init(groupsКок, centerKok, 'mapKok', '.map-Kok', 20));
 }, 4000);
 
 function init(groups, center, mapId, mapLeft, zoom) {
@@ -751,9 +767,11 @@ function init(groups, center, mapId, mapLeft, zoom) {
     e.preventDefault();
     $('#mapAlmaty').css('visibility', 'hidden');
     $('#mapTaraz').css('visibility', 'hidden');
+    $('#mapKok').css('visibility', 'hidden');
     $('#mapNur').css('visibility', 'visible');
     $('.map-Almaty').css('display', 'none');
     $('.map-Taraz').css('display', 'none');
+    $('.map-Kok').css('display', 'none');
     $('.map-Nur').css('display', 'block');
   })
 
@@ -761,9 +779,11 @@ function init(groups, center, mapId, mapLeft, zoom) {
     e.preventDefault();
     $('#mapNur').css('visibility', 'hidden');
     $('#mapTaraz').css('visibility', 'hidden');
+    $('#mapKok').css('visibility', 'hidden');
     $('#mapAlmaty').css('visibility', 'visible');
     $('.map-Nur').css('display', 'none');
     $('.map-Taraz').css('display', 'none');
+    $('.map-Kok').css('display', 'none');
     $('.map-Almaty').css('display', 'block');
   })
 
@@ -771,10 +791,24 @@ function init(groups, center, mapId, mapLeft, zoom) {
     e.preventDefault();
     $('#mapNur').css('visibility', 'hidden');
     $('#mapAlmaty').css('visibility', 'hidden');
+    $('#mapKok').css('visibility', 'hidden');
     $('#mapTaraz').css('visibility', 'visible');
     $('.map-Nur').css('display', 'none');
     $('.map-Almaty').css('display', 'none');
+    $('.map-Kok').css('display', 'none');
     $('.map-Taraz').css('display', 'block');
+  })
+
+  $('.kok-btn').on('click', function(e) {
+    e.preventDefault();
+    $('#mapNur').css('visibility', 'hidden');
+    $('#mapAlmaty').css('visibility', 'hidden');
+    $('#mapTaraz').css('visibility', 'hidden');
+    $('#mapKok').css('visibility', 'visible');
+    $('.map-Nur').css('display', 'none');
+    $('.map-Almaty').css('display', 'none');
+    $('.map-Taraz').css('display', 'none');
+    $('.map-Kok').css('display', 'block');
   })
 }
 });
