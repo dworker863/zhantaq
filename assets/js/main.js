@@ -285,6 +285,36 @@ const groupsNur = [
         name: 'Caviar Hause',
         address: 'Фариза Онгарсынова, <strong>6</strong>',
       },
+      {
+        center: [51.127415, 71.40136],
+        logo: 'images/магазин.webp',
+        name: 'Алкомаркет',
+        address: 'Сығанақ',
+      },
+      {
+        center: [51.139545,71.369721],
+        logo: 'images/магазин.webp',
+        name: 'магазин Ақшам',
+        address: 'Ильяса Омарова <strong>23</strong>',
+      },
+      {
+        center: [51.123374, 71.524875],
+        logo: 'images/магазин.webp',
+        name: 'Магазин Нағипа',
+        address: 'Құлагер',
+      },
+      {
+        center: [51.129138, 71.368257],
+        logo: 'images/магазин.webp',
+        name: 'Мини маркет Базар',
+        address: 'Е-11 <strong>10/1</strong>',
+      },
+      {
+        center: [51.124504,71.395062],
+        logo: 'images/магазин.webp',
+        name: 'Алко Холл',
+        address: 'Толе би <strong>46</strong>',
+      },
     ],
   },
 ]
