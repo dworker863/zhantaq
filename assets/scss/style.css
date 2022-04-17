@@ -484,7 +484,7 @@ input::-webkit-inner-spin-button {
   height: 93vh;
 }
 .start-slide1 {
-  background: url('../images/start1-christmas.webp') center no-repeat;
+  background: url('../images/start1.webp') center no-repeat;
   background-size: cover;
 }
 .start-slide1 .start-title {
@@ -540,7 +540,7 @@ input::-webkit-inner-spin-button {
   }
 }
 .start-slide2 {
-  background: url('../images/start2-christmas.webp') center no-repeat;
+  background: url('../images/start2.webp') center no-repeat;
   background-size: cover;
 }
 .start-slide2 .start-title {
@@ -579,7 +579,7 @@ input::-webkit-inner-spin-button {
   }
 }
 .start-slide3 {
-  background: url('../images/start3-christmas.webp') center no-repeat;
+  background: url('../images/start3.webp') center no-repeat;
   background-size: cover;
 }
 .start-slide3 .start-title {
@@ -1152,6 +1152,7 @@ input::-webkit-inner-spin-button {
 }
 
 .thirst {
+  overflow: hidden;
   width: 100%;
   margin-top: 37px;
   margin-bottom: 78px;
@@ -1883,6 +1884,7 @@ input::-webkit-inner-spin-button {
     height: calc(100vh - 412px);
     min-height: 556px;
     padding-top: 7vh;
+    margin-bottom: 120px;
   }
 
   .thirst {
@@ -3752,26 +3754,26 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 768px) {
   .start-slide1 {
-    background-image: url(../images/start1-mobile.webp);
+    background-image: url(../images/start1.webp);
   }
 
   .start-slide2 {
-    background-image: url(../images/start2-mobile.webp);
+    background-image: url(../images/start2.webp);
   }
 
   .start-slide3 {
-    background-image: url(../images/start3-mobile.webp);
+    background-image: url(../images/start3.webp);
   }
 
   .mission {
-    background-image: url(../images/variant-bg-mobile.webp);
+    background-image: url(../images/variant-bg.webp);
   }
 
   .variant {
-    background-image: url(../images/variant-bg-mobile.webp);
+    background-image: url(../images/variant-bg.webp);
   }
 
   .mission {
-    background-image: url(../images/zhantak00006-mobile.webp);
+    background-image: url(../images/zhantak00006.webp);
   }
 }
