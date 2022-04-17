@@ -675,18 +675,120 @@ const groupsКок = [
 const groupsShym = [
   {
     style: 'islands#redIcon',
-    items: [
+    items: [      
       {
-        center: [42.315514, 69.586916],
-        logo: 'images/магазин.webp',
-        name: 'магазин Арай',
-        address: 'Назарбаева <strong>3/7</strong>',
+        center: [42.362812, 69.63573],
+        logo: 'images/qurma-icon.webp',
+        name: 'Qurma',
+        address: 'Назарбаева <strong>53а</strong>',
       },
       {
-        center: [42.315514, 69.546916],
+        center: [42.318193, 69.588224],
+        logo: 'images/kausar-icon.webp',
+        name: 'Каусар',
+        address: 'Момышулы <strong>5</strong>',
+      },
+      {
+        center: [42.318615, 69.589748],
+        logo: 'images/mizam-icon.webp',
+        name: 'Мизам',
+        address: 'Момышулы <strong>6</strong>',
+      },
+      {
+        center: [42.290791, 69.601104],
+        logo: 'images/doni-icon.webp',
+        name: 'Дони-халал',
+        address: 'Камал <strong>11/1</strong>',
+      },
+      {
+        center: [42.321461, 69.604927],
+        logo: 'images/khankebab-icon.webp',
+        name: 'Khan Kebab',
+        address: 'Қазыбек би <strong>49</strong>',
+      },
+      {
+        center: [42.336332, 69.599573],
+        logo: 'images/alidoner-icon.webp',
+        name: 'Ali Doner Kebab',
+        address: 'Спортивный <strong>23</strong>',
+      },
+      {
+        center: [42.318814, 69.594192],
+        logo: 'images/alidoner-icon.webp',
+        name: 'Ali Doner Kebab',
+        address: 'Тәуке хан <strong>14</strong>',
+      },
+      {
+        center: [42.35004, 69.588523],
+        logo: 'images/alidoner-icon.webp',
+        name: 'Ali Doner Kebab',
+        address: 'Рыскулова <strong>49Б</strong>',
+      },
+      {
+        center: [42.316108, 69.593473],
+        logo: 'images/alidoner-icon.webp',
+        name: 'Ali Doner Kebab',
+        address: 'Туркестанская улица <strong>2/2</strong>',
+      },
+      {
+        center: [42.307591, 69.583100],
+        logo: 'images/alidoner-icon.webp',
+        name: 'Ali Doner Kebab',
+        address: 'Жангельдина <strong>3</strong>',
+      },
+      {
+        center: [42.309267, 69.581517],
+        logo: 'images/alidoner-icon.webp',
+        name: 'Ali Doner Kebab',
+        address: 'Қалдаяков <strong>1</strong>',
+      },
+      {
+        center: [42.305186, 69.614638],
+        logo: 'images/alidoner-icon.webp',
+        name: 'Ali Doner Kebab',
+        address: 'Төле би <strong>39</strong>',
+      },
+      {
+        center: [42.317481, 69.588883],
+        logo: 'images/thepapa-icon.webp',
+        name: 'The Папа',
+        address: 'Момышулы <strong>3</strong>',
+      },
+      {
+        center: [42.339258, 69.639736],
+        logo: 'images/thepapa-icon.webp',
+        name: 'The Папа',
+        address: 'Рыскулова <strong>49а</strong>',
+      },
+      {
+        center: [42.325867, 69.639275],
+        logo: 'images/thepapa-icon.webp',
+        name: 'The Папа',
+        address: 'Уалиханова <strong>213/13</strong>',
+      },
+      {
+        center: [42.314634, 69.587895],
+        logo: 'images/thepapa-icon.webp',
+        name: 'The Папа',
+        address: 'площадь Аль-Фараби <strong>3/1</strong>',
+      },
+      {
+        center: [42.345683, 69.614570],
+        logo: 'images/thepapa-icon.webp',
+        name: 'The Папа',
+        address: 'ОСО Hyper house',
+      },
+      {
+        center: [42.319401, 69.596051],
+        logo: 'images/thepapa-icon.webp',
+        name: 'The Папа',
+        address: 'Тәуке хан <strong>13</strong>',
+      },
+      {
+        center: [42.325114, 69.576028],
         logo: 'images/магазин.webp',
-        name: 'магазин Арай',
-        address: 'Назарбаева <strong>3/7</strong>',
+        name: 'Мейман',
+        address: 'Мангельдина <strong>284</strong>',
       },
     ]
   }
