@@ -644,11 +644,30 @@ const groupsКок = [
     style: 'islands#redIcon',
     items: [
       {
-        center: [53.285136,69.375515],
+        center: [53.308122, 69.386582],
         logo: 'images/магазин.webp',
-        name: 'Арзан маркет',
-        address: 'Село <strong>Ақшолақ</strong>',
+        name: 'магазин Арай',
+        address: 'Назарбаева <strong>3/7</strong>',
       },
+      {
+        center: [53.308316, 69.385298],
+        logo: 'images/магазин.webp',
+        name: 'магазин Расул',
+        address: 'Назарбаева <strong>3</strong>',
+      },
+      {
+        center: [53.279925, 69.369065],
+        logo: 'images/магазин.webp',
+        name: 'минимаркет Женіс',
+        address: 'Акана-Сері <strong>51</strong>',
+      },
+      {
+        center: [53.292161, 69.394946],
+        logo: 'images/магазин.webp',
+        name: 'минимаркет Астана',
+        address: 'Габдулина <strong>30</strong>',
+      },
+
     ]
   }
 ]
