@@ -1,65 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@font-face {
+  font-family: "MetaPro Medium";
+  src: url("../fonts/MetaProCond/MetaPro-CondMedi.otf");
+}
+@font-face {
+  font-family: "MetaPro Bold";
+  src: url("../fonts/MetaProCond/MetaPro-CondXbold.otf");
+}
 @font-face {
   font-family: Montserrat;
-  src: url('../fonts/Montserrat/Montserrat-Light.woff');
+  src: url("../fonts/Montserrat/Montserrat-Light.woff");
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: Montserrat;
-  src: url('../fonts/Montserrat/Montserrat-Regular.woff');
+  src: url("../fonts/Montserrat/Montserrat-Regular.woff");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: Montserrat;
-  src: url('../fonts/Montserrat/Montserrat-Medium.woff') format('woff');
+  src: url("../fonts/Montserrat/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: Montserrat;
-  src: url('../fonts/Montserrat/Montserrat-SemiBold.woff');
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.woff");
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: Montserrat;
-  src: url('../fonts/Montserrat/Montserrat-Bold.woff');
+  src: url("../fonts/Montserrat/Montserrat-Bold.woff");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: Montserrat;
-  src: url('../fonts/Montserrat/Montserrat-ExtraBold.woff');
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.woff");
   font-weight: 800;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Bebas Neue Regular';
-  src: url('../fonts/BebasNeue-Regular.woff');
+  font-family: "Bebas Neue Regular";
+  src: url("../fonts/BebasNeue-Regular.woff");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Bebas Neue Regular';
-  src: url('../fonts/BebasNeueRegular.woff');
+  font-family: "Bebas Neue Regular";
+  src: url("../fonts/BebasNeueRegular.woff");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Bebas Neue Regular';
-  src: url('../fonts/BebasNeue\ Light.woff');
+  font-family: "Bebas Neue Regular";
+  src: url("../fonts/BebasNeue\ Light.woff");
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Bebas Neue';
-  src: url('../fonts/BebasNeueRegular.woff');
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeueRegular.woff");
   font-weight: 400;
   font-display: swap;
 }
@@ -109,30 +117,48 @@ div {
 
 @font-face {
   font-family: Bebas Neue;
-  src: url('../fonts/ofont.ru_Bebas Neue.woff');
+  src: url("../fonts/ofont.ru_Bebas Neue.woff");
 }
 @font-face {
   font-family: Bebas Neue Regular;
-  src: url('../fonts/bebas_neue_regular.woff');
+  src: url("../fonts/bebas_neue_regular.woff");
 }
 @font-face {
   font-family: Bebas Neue Light;
-  src: url('../fonts/BebasNeue Light.woff');
+  src: url("../fonts/BebasNeue Light.woff");
 }
 @font-face {
   font-family: Acrom;
-  src: url('../fonts/ofont.ru_Acrom.woff');
+  src: url("../fonts/ofont.ru_Acrom.woff");
 }
-#mapAlmaty, #mapNur, #mapTaraz, #mapKok, #mapShym {
+#mapAlmaty,
+#mapNur,
+#mapTaraz,
+#mapKok,
+#mapShym {
   width: 600px;
   height: 500px;
 }
 
-#mapNur, #mapTaraz, #mapKok, #mapShym {
+#mapNur,
+#mapTaraz,
+#mapKok,
+#mapShym {
   position: absolute;
   top: 0;
   left: 0;
   visibility: hidden;
+}
+
+.map-Kok,
+.map-Nur,
+.map-Shym,
+.map-Taraz {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
 }
 
 .map-btns {
@@ -140,7 +166,12 @@ div {
   margin-bottom: 20px;
 }
 
-.almaty-btn, .nur-btn, .taraz-btn, .kok-btn, .shym-btn {
+.almaty-btn,
+.nur-btn,
+.taraz-btn,
+.kok-btn,
+.shym-btn {
+  cursor: pointer;
   font-family: Montserrat, serif;
   display: inline-block;
   margin-bottom: 10px;
@@ -150,16 +181,25 @@ div {
   color: #fff;
 }
 
-.almaty-btn, .nur-btn, .taraz-btn, .kok-btn {
+.almaty-btn,
+.nur-btn,
+.taraz-btn,
+.kok-btn {
   margin-right: 6px;
 }
 
-.almaty-btn:hover, .nur-btn:hover, .taraz-btn:hover, .kok-btn:hover, .shym-btn:hover {
-  background-color: #DAF2E6;
-  color: #559374;  
-} 
+.map-btns a.active,
+.almaty-btn:hover,
+.nur-btn:hover,
+.taraz-btn:hover,
+.kok-btn:hover,
+.shym-btn:hover {
+  background-color: #daf2e6;
+  color: #559374;
+}
 
-.map-right {
+.map-right,
+.map-left {
   position: relative;
 }
 
@@ -449,7 +489,7 @@ input::-webkit-inner-spin-button {
 }
 
 .hamburger-menu:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 15px;
@@ -459,7 +499,7 @@ input::-webkit-inner-spin-button {
 }
 
 .hamburger-menu:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 15px;
@@ -492,7 +532,7 @@ input::-webkit-inner-spin-button {
   height: 93vh;
 }
 .start-slide1 {
-  background: url('../images/start1.webp') center no-repeat;
+  background: url("../images/start1.webp") center no-repeat;
   background-size: cover;
 }
 .start-slide1 .start-title {
@@ -547,7 +587,7 @@ input::-webkit-inner-spin-button {
   }
 }
 .start-slide2 {
-  background: url('../images/start2.webp') center no-repeat;
+  background: url("../images/start2.webp") center no-repeat;
   background-size: cover;
 }
 .start-slide2 .start-title {
@@ -586,7 +626,7 @@ input::-webkit-inner-spin-button {
   }
 }
 .start-slide3 {
-  background: url('../images/start3.webp') center no-repeat;
+  background: url("../images/start3.webp") center no-repeat;
   background-size: cover;
 }
 .start-slide3 .start-title {
@@ -631,7 +671,7 @@ input::-webkit-inner-spin-button {
 .start-title {
   margin-top: 170px;
   color: #203930;
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 141px;
   font-weight: 400;
   margin-bottom: 4px;
@@ -648,7 +688,7 @@ input::-webkit-inner-spin-button {
 }
 .start-subtitle {
   color: #203930;
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 72px;
   font-weight: 400;
   font-style: normal;
@@ -705,7 +745,7 @@ input::-webkit-inner-spin-button {
   color: #559374;
   font-family: Bebas Neue Regular;
   font-size: 48px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 47.42px;
   margin-bottom: 10px;
 }
@@ -780,7 +820,7 @@ input::-webkit-inner-spin-button {
 }
 .story-title {
   color: #559374;
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 48px;
   font-weight: 400;
   line-height: 48px;
@@ -874,7 +914,7 @@ input::-webkit-inner-spin-button {
   margin-top: 42px;
   width: 400px;
   color: #559374;
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 48px;
   font-weight: 400;
   margin-bottom: 11px;
@@ -908,7 +948,7 @@ input::-webkit-inner-spin-button {
 }
 .arsenal-title {
   color: #559374;
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 48px;
   font-weight: 400;
   margin-bottom: 19px;
@@ -1009,13 +1049,13 @@ input::-webkit-inner-spin-button {
 
 .amino {
   width: 100%;
-  background: url('../images/amino-bg.webp') right no-repeat;
+  background: url("../images/amino-bg.webp") right no-repeat;
   background-size: 50%;
   padding: 60px 0;
 }
 @media (max-width: 1624px) {
   .amino {
-    background: url('../images/amino-bg.webp') right no-repeat;
+    background: url("../images/amino-bg.webp") right no-repeat;
     background-position: right 0px;
   }
 }
@@ -1032,7 +1072,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   width: 70%;
   height: 100%;
-  content: '';
+  content: "";
   z-index: 1;
   top: 0;
 }
@@ -1042,7 +1082,7 @@ input::-webkit-inner-spin-button {
 }
 .amino-title {
   color: #559374;
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 48px;
   font-weight: 400;
 }
@@ -1067,7 +1107,7 @@ input::-webkit-inner-spin-button {
   }
 }
 .amino span {
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 72px;
   font-weight: 400;
 }
@@ -1166,7 +1206,7 @@ input::-webkit-inner-spin-button {
 }
 .thirst-title {
   color: #559374;
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 48px;
   font-weight: 400;
   text-align: center;
@@ -1224,7 +1264,7 @@ input::-webkit-inner-spin-button {
 }
 .thirst-card-num {
   color: #000000;
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 48px;
   font-weight: 400;
 }
@@ -1301,7 +1341,7 @@ input::-webkit-inner-spin-button {
 .variant {
   width: 100%;
   overflow: hidden;
-  background: url('../images/variant-bg.webp') no-repeat center;
+  background: url("../images/variant-bg.webp") no-repeat center;
   background-size: cover;
   height: 717px;
   padding-top: 64px;
@@ -1313,7 +1353,7 @@ input::-webkit-inner-spin-button {
 }
 .variant-title {
   color: #ffffff;
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 48px;
   font-weight: 400;
   text-align: center;
@@ -1452,7 +1492,7 @@ input::-webkit-inner-spin-button {
   }
 }
 .variant-info-bottle p {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 18px;
   color: #a8a7a8;
@@ -1463,7 +1503,7 @@ input::-webkit-inner-spin-button {
   }
 }
 .variant-info-bottle span {
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 82px;
   font-weight: 400;
   color: #ffffff;
@@ -1491,7 +1531,7 @@ input::-webkit-inner-spin-button {
 }
 .mission {
   width: 100%;
-  background: url('../images/mission-bg.webp') no-repeat center;
+  background: url("../images/mission-bg.webp") no-repeat center;
   background-size: cover;
   height: 640px;
 }
@@ -1500,7 +1540,7 @@ input::-webkit-inner-spin-button {
 }
 .mission-title {
   color: #559374;
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 48px;
   font-weight: 400;
   margin-top: 40px;
@@ -1606,7 +1646,7 @@ input::-webkit-inner-spin-button {
 }
 .contacts-form .input-form input {
   color: #000000;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
@@ -1626,7 +1666,8 @@ input::-webkit-inner-spin-button {
     margin-bottom: 10px;
   }
 
-  #mapAlmaty, #mapNur {
+  #mapAlmaty,
+  #mapNur {
     width: 650px !important;
     height: 500px !important;
   }
@@ -1679,7 +1720,6 @@ input::-webkit-inner-spin-button {
   text-align: center;
 }
 
-
 @media (max-width: 425px) {
   .partner-title {
     font-size: 12px;
@@ -1708,7 +1748,7 @@ input::-webkit-inner-spin-button {
   width: 100%;
   padding-top: 42px;
   padding-bottom: 14px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .map-content {
   display: flex;
@@ -1723,7 +1763,7 @@ input::-webkit-inner-spin-button {
 }
 .map-left {
   width: 540px;
-  max-height: 500px;
+  height: 500px;
   overflow: overlay;
 }
 .map-left .menu {
@@ -1891,7 +1931,7 @@ input::-webkit-inner-spin-button {
     height: calc(100vh - 412px);
     min-height: 556px;
     padding-top: 7vh;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
   }
 
   .thirst {
@@ -2048,7 +2088,7 @@ input::-webkit-inner-spin-button {
   .map-content {
     justify-content: center;
     flex-direction: column-reverse;
-    max-width: 650px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2479,7 +2519,8 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
   }
 
-  #mapAlmaty, #mapNur {
+  #mapAlmaty,
+  #mapNur {
     width: 90%;
   }
 
@@ -3021,7 +3062,7 @@ input::-webkit-inner-spin-button {
   height: calc(100vh - 108px);
   max-height: 992px;
   box-sizing: border-box;
-  background: url('../images/main2-bg.webp') no-repeat center;
+  background: url("../images/main2-bg.webp") no-repeat center;
   background-size: cover;
 }
 @media (max-width: 1024px) {
@@ -3039,7 +3080,7 @@ input::-webkit-inner-spin-button {
   max-width: 949px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 49px;
   font-weight: 400;
   font-style: normal;
@@ -3061,7 +3102,7 @@ input::-webkit-inner-spin-button {
   letter-spacing: normal;
 }
 .main-title-dop {
-  font-family: 'Bebas Neue Light';
+  font-family: "Bebas Neue Light";
   font-size: 48px;
   font-weight: 300;
   font-style: normal;
@@ -3142,7 +3183,7 @@ input::-webkit-inner-spin-button {
 }
 .condition-title {
   color: #203930;
-  font-family: 'Bebas Neue Regular';
+  font-family: "Bebas Neue Regular";
   font-size: 72px;
   font-weight: 400;
   text-align: center;
@@ -3220,14 +3261,14 @@ input::-webkit-inner-spin-button {
   position: relative;
 }
 .form_reg-content::after {
-  content: url('../images/effect-right.webp');
+  content: url("../images/effect-right.webp");
   position: absolute;
   z-index: 100;
   top: -50px;
   right: -100px;
 }
 .form_reg-content::before {
-  content: url('../images/effect-left.webp');
+  content: url("../images/effect-left.webp");
   position: absolute;
   z-index: 100;
   top: -50px;

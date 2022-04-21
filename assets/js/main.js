@@ -980,4 +980,10 @@ document.addEventListener("DOMContentLoaded", function () {
       $(".map-Shym").css("display", "block");
     });
   }
+
+  $(".map-btns a").on("click", function (e) {
+    const th = $(this);
+    $(".map-btns a.active").removeClass("active");
+    $(th).addClass("active");
+  });
 });
