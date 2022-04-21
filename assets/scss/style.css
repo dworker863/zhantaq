@@ -256,8 +256,8 @@ input::-webkit-inner-spin-button {
 .header-link {
   color: #000000;
   font-family: Montserrat, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .header-link:hover {
